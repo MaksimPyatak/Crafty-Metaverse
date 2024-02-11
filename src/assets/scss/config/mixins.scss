@@ -1,0 +1,47 @@
+// !gradient for text
+@mixin textGradient($gradient) {
+   background: $gradient;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+@mixin anyHover() {
+   @media (any-hover: hover) {
+      &:hover {
+         @content;
+      }
+   }
+}
+
+// !:not (last-child)
+@mixin notLast() {
+   &:not(:last-child) {
+      @content;
+   }
+}
+
+// !:not (first-child)
+@mixin notFirst() {
+   &:not(:first-child) {
+      @content;
+   }
+}
+
+// !обрезает текст до определенного кол-ва строк, остаток заменяет на 3 точки (...)
+@mixin lineClamp($value) {
+   display: -webkit-box;
+   -webkit-line-clamp: $value;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
+
+// !after-before
+
+// !after-before
+@mixin pseudocell($type, $pos: absolute) {
+   &::#{$type} {
+      content: '';
+      position: $pos;
+      @content;
+   }
+}

@@ -1,47 +1,13 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import TheHeader from './components/header/TheHeader.vue'
+//import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+   <TheHeader />
+   <main style="margin-top: 150px;">
+      Hello Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae deserunt, quis et esse dolores maxime necessitatibus iusto odit sapiente rerum voluptas in quisquam dolorem consequatur iure quo id, labore odio ullam velit impedit! Provident molestias laboriosam quia voluptatum, impedit eius ullam, architecto amet magni voluptatem cumque quidem dicta. Numquam non vel fuga rem consectetur deleniti dolorem veniam ratione hic doloremque minima, quae ad ducimus dignissimos, saepe at possimus? Eius perspiciatis doloremque beatae accusantium aliquid sapiente dolore maiores consequuntur iusto tempore, esse labore suscipit explicabo praesentium ab. Neque in atque, molestiae sint eligendi odit architecto, ea aliquid natus velit quaerat, aspernatur omnis maiores eveniet harum tempora. Distinctio, autem minima. Sequi sint animi aliquid nam cumque perferendis provident qui deserunt eius assumenda? Repellat atque odio placeat molestias alias. Id aspernatur sunt libero unde vel maxime, architecto eaque necessitatibus ad commodi mollitia consectetur explicabo? Qui temporibus unde ducimus soluta magnam animi quod explicabo earum sed minima nisi ratione in, laboriosam quaerat accusantium fugiat voluptates ullam dolore modi perferendis quis quidem. Deserunt unde a error inventore tenetur cum et, nemo dolorum voluptatibus placeat officiis omnis reprehenderit fuga, laudantium nesciunt totam adipisci veniam non rerum deleniti dolorem? Ullam, dignissimos. Qui unde magnam corporis facilis nemo temporibus nam, animi beatae ex aliquam quas voluptatum odio repellat odit voluptatibus autem atque recusandae laborum dolorum adipisci necessitatibus nihil voluptate dolorem? Fuga, assumenda. Eum illo, dolore molestiae cum labore ipsa atque veritatis adipisci consectetur. Impedit id, maiores suscipit eveniet vel reprehenderit enim! Sit quas expedita, error hic consectetur esse eos ut. Explicabo sit ex maiores labore magnam, omnis consectetur architecto laudantium quam repudiandae. Aspernatur quia distinctio cum sequi, consequuntur magnam aliquid sed porro, exercitationem libero fuga sint cumque inventore reprehenderit molestiae earum vero doloribus voluptas voluptate voluptatum nulla officia vel. Dolor quos officiis ex inventore praesentium cupiditate culpa incidunt minus eveniet repellendus, iusto blanditiis eligendi omnis sequi ab ea! Quidem dignissimos aut sunt explicabo atque sint delectus ullam possimus vel aperiam illo, eaque ipsa omnis molestias sed nulla. Itaque iste magnam maxime? Dolorum laboriosam magni perferendis, illo facilis consectetur officia sapiente odit assumenda molestiae consequatur error obcaecati, nulla nostrum rerum soluta incidunt. Rem quis ipsa ab impedit vitae, adipisci itaque dolorem aliquid sint asperiores est dignissimos accusamus reprehenderit quia ea velit obcaecati nesciunt alias ratione fugit corporis temporibus. Ullam vero sunt excepturi! Maiores, obcaecati. Cumque veritatis, consequatur rem perferendis magni facere, corporis animi sed sint voluptatum labore dignissimos odit ad cum sequi recusandae saepe id similique iusto cupiditate ipsa modi, velit quidem. Suscipit similique cumque ex molestias, deleniti quia amet, doloribus voluptatum soluta modi et sit iusto. Fugiat facere laborum, perferendis deserunt odio dolorem nostrum at quidem facilis, tenetur quod nihil veniam repudiandae obcaecati quae iusto commodi, nesciunt ipsum illo dignissimos non doloremque ullam. In accusamus consectetur quam sed, odit laboriosam omnis natus corporis dolor incidunt non sit! Libero et amet expedita natus nihil, consequatur quod magni dolore, tenetur, voluptate quaerat nobis! Ut nulla quibusdam earum sunt maiores distinctio est quo necessitatibus! Reprehenderit fugit amet dolores libero, laudantium vitae ea laborum unde a ducimus hic assumenda obcaecati, vel est ipsam optio sapiente doloribus magnam nulla. Ratione voluptas aperiam, cupiditate corrupti incidunt obcaecati laboriosam vel ex rerum doloribus quod dolor, dicta repudiandae! Amet, corporis ea expedita repudiandae dolor, quas nulla doloribus reprehenderit eum deserunt molestiae temporibus necessitatibus non nobis nisi rerum sit asperiores quisquam dolorem. Eius consequatur dolor iusto facere dolorum ratione deleniti laboriosam, hic nostrum, at magnam mollitia beatae expedita! Non blanditiis sed quidem voluptatem ipsa quasi voluptates quaerat, fugit, magni quo doloremque excepturi reiciendis iste adipisci perferendis aliquam error ipsum delectus porro, nulla optio temporibus molestiae assumenda! Itaque, fugit esse ad modi nemo nesciunt? Labore aliquam quo possimus doloribus. Accusantium eaque, molestias excepturi vero accusamus reprehenderit exercitationem provident minima doloribus sint cupiditate officia earum consectetur aliquid? Corrupti, vitae illo. Exercitationem corrupti saepe alias, minus repellat, cupiditate inventore libero incidunt nesciunt, voluptate vero esse temporibus laborum sit deserunt odio dolore ex omnis dolorum vitae recusandae voluptatem debitis tempore enim. A deleniti similique blanditiis hic, ullam omnis alias accusamus eos provident sed nihil commodi cum laudantium voluptas quibusdam asperiores quos. Harum, numquam, earum consequatur quasi similique obcaecati corporis dignissimos exercitationem commodi quos ratione minima tempora officiis qui distinctio, aperiam nemo molestiae eligendi expedita nisi iure mollitia explicabo? Accusamus, ex consequatur veniam corrupti similique labore quaerat fugit excepturi at laborum in animi, molestias necessitatibus nulla illo quibusdam rem asperiores porro! Dolorum odio, eveniet optio eum blanditiis excepturi aspernatur et dolorem sit, suscipit, nisi temporibus voluptatum! Eum quibusdam necessitatibus, labore inventore dicta nobis tenetur ipsa ea doloremque sed ipsam voluptate tempore, minima modi quia. Voluptatibus dolor quia dolorum excepturi ducimus. Facere inventore blanditiis cum accusamus nesciunt aspernatur doloremque! Perspiciatis minima incidunt ipsam hic eaque optio est cum tempore laborum perferendis. Numquam sint voluptatibus deleniti facere aliquid ipsa, nam laboriosam! Voluptatem architecto at dicta quo officia quidem iusto, odio reprehenderit illum aliquam aspernatur, nihil amet natus ipsa aliquid ratione harum atque exercitationem! Nam, minus nobis, provident iure ipsum recusandae itaque repellendus delectus ipsa impedit voluptates! Odio laborum ipsam, rerum sapiente tempora sit! Iure et porro corrupti laboriosam delectus, rem ex at! Harum laudantium quos facilis modi mollitia, amet corrupti atque, magni sint ex error neque nulla hic at dolor libero aliquam praesentium dolore nisi similique distinctio! Nisi assumenda cum, ipsa, in libero ab fuga quia harum eos odio officiis quos labore nam ex pariatur perferendis vitae quaerat placeat obcaecati ratione quibusdam tenetur aliquid excepturi porro. Ut fugiat natus accusantium, voluptatem magni mollitia exercitationem labore itaque delectus ipsum amet blanditiis optio a voluptatum debitis commodi quisquam. Iusto, dolore quos, sed accusamus enim laboriosam vitae asperiores nesciunt corrupti dolor non provident nam quidem debitis ipsa fugit! Asperiores ex vitae id ad modi expedita beatae dicta accusantium. Rerum esse possimus voluptatem minus veritatis, itaque quibusdam tenetur nobis delectus ut aspernatur dolorum ex excepturi, eum reiciendis velit nam temporibus sequi quam aliquid vero animi ipsam deserunt corporis. Necessitatibus, natus illum consequuntur unde illo perspiciatis recusandae autem tempora tempore facere placeat dolore facilis eius distinctio. Voluptatem, soluta itaque?
+   </main>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+<style scoped lang="scss"></style>

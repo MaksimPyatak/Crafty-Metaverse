@@ -1,0 +1,31 @@
+// Firefox
+* {
+  scrollbar-width: rem(5);
+  scrollbar-color: $yellow300 $DimGray; // #606060;
+
+  // Chrome, Edge, and Safari
+  &::-webkit-scrollbar {
+    width: rem(5);
+    background-color: $white50;
+    border-radius: rem(2.5);
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow:
+      inset 1px 0 0 #000,
+      inset -1px 0 0 #000;
+    border-radius: rem(2.5);
+    background: #606060;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: rem(2.5);
+    border: 0 none #606060;
+    background-color: lighten($yellow300, 10%);
+    transition: background-color 280ms ease-in-out;
+
+    &:hover {
+      background-color: $yellow300;
+    }
+  }
+}

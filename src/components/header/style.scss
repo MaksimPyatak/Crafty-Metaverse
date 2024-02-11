@@ -1,0 +1,177 @@
+@import '../../assets/scss/config/breakpoints';
+
+.header {
+   width: 100%;
+   height: 122px;
+   position: fixed;
+   background: rgba(9, 8, 18, 0.8);
+
+   &__container {
+      position: relative;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__logo-box {
+      margin: 0px 20px 0px 0px;
+   }
+
+   &__nav {
+      @include respond-below(sm) {
+         position: absolute;
+         top: 0;
+         left: -100vw;
+         transition: left 0.5s ease-in-out;
+      }
+
+      &_show {
+         @include respond-below(sm) {
+            left: 0;
+         }
+      }
+   }
+
+   &__burger-menu {
+      display: none;
+      @include respond-below(sm) {
+         display: block;
+         position: relative;
+         width: 32px;
+         height: 16px;
+         cursor: pointer;
+         z-index: 4;
+
+         & span {
+            position: absolute;
+            background-color: #ffffff;
+            width: 19px;
+            height: 2px;
+            right: 0;
+            top: 7px;
+            transition: transform 0.3s ease 0.3s;
+         }
+
+         &:before,
+         &:after {
+            content: '';
+            background-color: #ffffff;
+            position: absolute;
+            height: 2px;
+            right: 0;
+            transition:
+               transform 0.3s ease 0.3s,
+               top 0.3s ease 0.3s,
+               bottom 0.3s ease 0.3s,
+               width 0.3s ease 0.3s;
+         }
+
+         &:before {
+            top: 0;
+            width: 100%;
+         }
+
+         &:after {
+            bottom: 0;
+            width: 25px;
+         }
+
+         &_active span {
+            transform: scale(0);
+         }
+
+         &_active::before {
+            transform: rotate(45deg);
+            top: 7px;
+         }
+
+         &_active::after {
+            transform: rotate(-45deg);
+            bottom: 7px;
+            width: 100%;
+         }
+      }
+   }
+}
+.nav {
+   @include respond-below(sm) {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+   }
+   &__list {
+      display: flex;
+      @include respond-below(sm) {
+         width: 100%;
+         height: 100%;
+         padding: 140px 20px 20px 20px;
+         margin: 0px 0px 40px 0px;
+         flex-direction: column;
+         overflow-y: auto;
+      }
+   }
+
+   &__list-item {
+      width: max-content;
+      position: relative;
+      opacity: 0.7;
+      &:not(:last-child) {
+         margin: 0px clamp(20px, 2.5vw, 45px) 0px 0px;
+         @include respond-below(sm) {
+            margin: 0px 0px 40px 0px;
+         }
+      }
+      &::after {
+         position: absolute;
+         content: '';
+         width: 100%;
+         height: 2px;
+         background-color: rgba(0, 219, 222, 1);
+         left: 0;
+         bottom: -8px;
+         transform: scaleX(0);
+         transition: transform 0.3s;
+         transform-origin: left;
+      }
+
+      &:hover {
+         opacity: 1;
+         &::after {
+            transform: scaleX(1);
+            transition: transform 0.25s;
+         }
+      }
+   }
+
+   &__list-link {
+      font-size: clamp(16px, 2.3vw, 20px);
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: 0.6px;
+      color: #ffffff;
+      @include respond-below(sm) {
+         font-size: 20px;
+      }
+   }
+
+   &__bg {
+      display: none;
+      @include respond-below(sm) {
+         display: block;
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100vw;
+         height: 100vh;
+         flex-direction: column;
+         z-index: -1;
+      }
+   }
+
+   &__bg-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+}

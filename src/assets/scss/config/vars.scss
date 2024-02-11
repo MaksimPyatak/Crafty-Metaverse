@@ -1,0 +1,33 @@
+$maxWidth: 1920; // максимальная ширина страницы
+$minWidth: 320; // минимальная ширина телефона
+$maxWidthContainer: 1678; // ширина контейнера с учетом padding слева и справа
+$containerWidth: 1640; // ширина контейнера из макета
+
+$mainOffset: 19; // отступы безопасности для контейнера
+$mainFont: 'PlusJakartaSans'; // !указать здесь основное семейство шрифта
+$mainWeight: 400; // !указать здесь основное начертание шрифта
+
+$headerHeight: 100;
+$footerHeight: 100;
+
+//$firstAccentColor: $blackColor;
+//$secondAccentColor: $redColor;
+
+$standartTrans: all 280ms ease-in-out 0ms;
+
+// $mainRadius: rem(10);
+$whiteColor: #fff;
+$whiteColor09: rgba(255, 255, 255, 0.9);
+$blackColor: #131313;
+//$blackColor04: rgba(0, 0, 0, 0.4);
+//$blackColor025: rgba(0, 0, 0, 0.25);
+//$grayColor: #6f6f6f;
+//$redColor: #ff4040;
+
+//$hoverBoxShadow: 0 0 5px 0 rgba(#000, 10%), 0 0 10px 0 rgba(#000, 10%),
+//  0 0 15px 0 rgba(#000, 10%);
+
+$fontFamily: $mainFont, sans-serif; // Семейство шрифта по умолчанию
+$fontColor: $whiteColor09; // Цвет шрифта по умолчанию
+$fontSize: 16; // Размер шрифта по умолчанию
+$fontWeight: $mainWeight; // Жирность шрифта по умолчанию
