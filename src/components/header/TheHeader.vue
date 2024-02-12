@@ -12,7 +12,7 @@
             </ul>
             <div class="nav__bg">
                <picture>
-                  <!--<source src="#" type="image/webp">-->
+                  <source src="../../assets/img/header/burger-menu-bg.webp" type="image/webp">
                   <img class="nav__bg-img" src="../../assets/img/header/burger-menu-bg.png">
                </picture>
             </div>

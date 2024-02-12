@@ -1,10 +1,14 @@
 @import '../../assets/scss/config/breakpoints';
 
 .header {
+   position: fixed;
    width: 100%;
    height: 122px;
-   position: fixed;
    background: rgba(9, 8, 18, 0.8);
+   z-index: 1;
+   @include respond-below(s) {
+      height: 110px;
+   }
 
    &__container {
       position: relative;
@@ -16,6 +20,11 @@
 
    &__logo-box {
       margin: 0px 20px 0px 0px;
+      z-index: 1;
+      @include respond-below(s) {
+         width: 22px;
+         height: 22px;
+      }
    }
 
    &__nav {
@@ -99,16 +108,19 @@
       width: 100vw;
       height: 100vh;
       overflow: hidden;
+      background: rgba(9, 8, 18, 1);
    }
    &__list {
       display: flex;
       @include respond-below(sm) {
+         position: relative;
          width: 100%;
          height: 100%;
          padding: 140px 20px 20px 20px;
          margin: 0px 0px 40px 0px;
          flex-direction: column;
          overflow-y: auto;
+         z-index: 1;
       }
    }
 
@@ -165,7 +177,6 @@
          width: 100vw;
          height: 100vh;
          flex-direction: column;
-         z-index: -1;
       }
    }
 
