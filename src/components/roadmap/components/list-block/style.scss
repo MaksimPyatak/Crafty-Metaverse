@@ -1,0 +1,47 @@
+.block-list {
+   &__content-box {
+   }
+
+   &__subtitle {
+   }
+
+   &__title {
+   }
+
+   &__list {
+      &_type {
+      }
+   }
+
+   &__list-item {
+   }
+
+   &__nested-list {
+   }
+
+   &__item-nested-list {
+      span {
+         margin: 0px 10px 0px 0px;
+      }
+   }
+
+   &__list-item-marker {
+      margin: 0px 14px 0px 0px;
+   }
+
+   &__more-buttom {
+   }
+
+   &__more-buttom-arrow {
+   }
+
+   .fade-enter-active,
+   .fade-leave-active {
+      transition: opacity 0.5s;
+   }
+
+   .fade-enter,
+   .fade-leave-to {
+      opacity: 0;
+   }
+}
