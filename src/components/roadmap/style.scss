@@ -1,30 +1,119 @@
+@import '../../assets/scss/config/breakpoints';
+
 .roadmap {
+   position: relative;
    width: 100%;
 
    &__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
    }
    &__bg-img {
+      margin: 0px 149px 0px 0px;
    }
 
    &__container {
-      margin: 216px 0px 211px 0px;
-   }
-
-   &__wrapper-content {
+      width: 100%;
+      margin: 223px auto 211px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
    }
 
    &__subtitle {
-      margin: 0px 0px 20px 0px;
+      margin: 0px 0px 19px 71px;
       font-size: 20px;
       font-weight: 400;
-      line-height: 28px;
+      line-height: 140%;
       letter-spacing: 0em;
-      text-align: left;
+      text-align: center;
+      text-transform: uppercase;
    }
 
    &__title {
+      margin: 0px 0px 92px 69px;
+      font-family: HeliosExtC;
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 109%;
+      letter-spacing: 0em;
+      text-align: center;
+      text-transform: uppercase;
    }
 
    &__blocks-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__blocks-list-item {
+      &:nth-child(1) {
+         margin: 0px 0px 91px 188px;
+         .block-list {
+            &__content-box {
+               width: 418px;
+            }
+            &__title {
+               max-width: 280px;
+            }
+         }
+         .lighthohuse {
+            margin: -5px 0px 0px 1px;
+         }
+         @include respond-below(md) {
+            margin: 0px 0px 91px 0px;
+         }
+      }
+      &:nth-child(2) {
+         margin: 0px 148px 35px 0px;
+         align-self: flex-end;
+         .block-list {
+            &__content-box {
+               width: 476px;
+            }
+         }
+         .lighthohuse {
+            margin: -30px 36px 0px 0px;
+         }
+         @include respond-below(md) {
+            margin: 0px 0px 35px 0px;
+         }
+      }
+      &:nth-child(3) {
+         margin: 0px 0px 222px 164px;
+         .block-list {
+            &__content-box {
+               width: 424px;
+            }
+         }
+         .lighthohuse {
+            margin: -13px 0px 0px 1px;
+         }
+         @include respond-below(md) {
+            margin: 0px 0px 222px 0px;
+         }
+      }
+      &:nth-child(4) {
+         align-self: flex-end;
+         margin: 0px 67px 0px 0px;
+         .block-list {
+            &__content-box {
+               width: 513px;
+            }
+         }
+         .lighthohuse {
+            margin: -8px 35px 0px 0px;
+         }
+         @include respond-below(md) {
+            margin: 0px 0px 0px 0px;
+         }
+      }
    }
 }

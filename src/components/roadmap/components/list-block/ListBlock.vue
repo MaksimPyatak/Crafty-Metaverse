@@ -11,7 +11,8 @@
                 :key="item.id"
                 class="block-list__list-item">
                <div>
-                  <ListItemMarker />{{ item.li }}
+                  <ListItemMarker class="block-list__list-item-marker" />
+                  <div class="block-list__list-item">{{ item.li }}</div>
                </div>
 
                <ul v-if="item.nestedList" class="block-list__nested-list">
@@ -24,7 +25,7 @@
          </ul>
 
          <transition name="fade">
-            <ul v-show="isMore" class="block-list__list block-list__list_type_continued">
+            <ul v-show="isMore" class="block-list__list">
                <li
                    v-for="item in content.continuedList"
                    :key="item.id"
@@ -43,7 +44,7 @@
             </ul>
          </transition>
 
-         <div @click="showMore" class="block-list__more-buttom">
+         <div v-if="content.continuedList" @click="showMore" class="block-list__more-buttom">
             More
             <DownArrow class="block-list__more-buttom-arrow" />
          </div>
@@ -68,7 +69,7 @@ function showMore() {
 //const contentClass=ref(null);
 
 const blockListClasses = computed(() =>
-   props.index % 2
+   (props.index + 1) % 2
       ? [
          'block-list__content-box_position_first',
          'block-list__lighthuse_position_second',
