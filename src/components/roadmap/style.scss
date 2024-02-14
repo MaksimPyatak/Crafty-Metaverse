@@ -18,12 +18,50 @@
       margin: 0px 149px 0px 0px;
    }
 
+   &__left-blur {
+      position: absolute;
+      top: 32px;
+      left: -24%;
+      width: 1088px;
+      height: 839px;
+      border-radius: 50%;
+      background: linear-gradient(
+         90deg,
+         rgba(0, 219, 222, 0.3) 0%,
+         rgba(252, 0, 255, 0.3) 100%
+      );
+      opacity: 0.5;
+      transform: rotate(28.71deg);
+      filter: blur(210px);
+      z-index: 1;
+   }
+
+   &__right-blur {
+      position: absolute;
+      top: 468px;
+      right: 0;
+      width: 1088.88px;
+      height: 839.24px;
+      background: linear-gradient(
+         90deg,
+         rgba(0, 219, 222, 0.3) 0%,
+         rgba(252, 0, 255, 0.3) 100%
+      );
+      opacity: 0.5;
+      transform: rotate(28.71deg);
+      filter: blur(210px);
+      z-index: 1;
+   }
+
    &__container {
       width: 100%;
-      margin: 223px auto 211px auto;
+      margin: 223px auto 224px auto;
       display: flex;
       flex-direction: column;
       align-items: center;
+      @include respond-below(sm) {
+         margin: 73px auto 149px auto;
+      }
    }
 
    &__subtitle {
@@ -34,17 +72,26 @@
       letter-spacing: 0em;
       text-align: center;
       text-transform: uppercase;
+      @include respond-below(sm) {
+         margin: 0px 0px 20px 0px;
+      }
+      @include respond-below(s) {
+         font-size: 16px;
+      }
    }
 
    &__title {
       margin: 0px 0px 92px 69px;
       font-family: HeliosExtC;
-      font-size: 45px;
+      font-size: clamp(28px, 5.2vw, 45px);
       font-weight: 700;
       line-height: 109%;
       letter-spacing: 0em;
       text-align: center;
       text-transform: uppercase;
+      @include respond-below(sm) {
+         margin: 0px 0px 46px 0px;
+      }
    }
 
    &__blocks-list {
@@ -56,9 +103,12 @@
    &__blocks-list-item {
       &:nth-child(1) {
          margin: 0px 0px 91px 188px;
+         @include respond-below(md) {
+            margin: 0px 0px 32px 0px;
+         }
          .block-list {
             &__content-box {
-               width: 418px;
+               max-width: 418px;
             }
             &__title {
                max-width: 280px;
@@ -66,53 +116,68 @@
          }
          .lighthohuse {
             margin: -5px 0px 0px 1px;
-         }
-         @include respond-below(md) {
-            margin: 0px 0px 91px 0px;
+            @include respond-below(md) {
+               margin: 0px 39px -15px auto;
+            }
          }
       }
       &:nth-child(2) {
          margin: 0px 148px 35px 0px;
          align-self: flex-end;
+         @include respond-below(md) {
+            margin: 0px 0px 0px 0px;
+         }
+         @include respond-below(sm) {
+            align-self: flex-start;
+         }
          .block-list {
             &__content-box {
-               width: 476px;
+               max-width: 476px;
             }
          }
          .lighthohuse {
             margin: -30px 36px 0px 0px;
-         }
-         @include respond-below(md) {
-            margin: 0px 0px 35px 0px;
+            @include respond-below(md) {
+               margin: 0px 0px 24px 39px;
+            }
          }
       }
       &:nth-child(3) {
          margin: 0px 0px 222px 164px;
+         @include respond-below(md) {
+            margin: 0px 0px 28px 0px;
+         }
          .block-list {
             &__content-box {
-               width: 424px;
+               max-width: 424px;
             }
          }
          .lighthohuse {
             margin: -13px 0px 0px 1px;
-         }
-         @include respond-below(md) {
-            margin: 0px 0px 222px 0px;
+            @include respond-below(md) {
+               margin: -4px 40px 20px auto;
+            }
          }
       }
       &:nth-child(4) {
-         align-self: flex-end;
          margin: 0px 67px 0px 0px;
+         align-self: flex-end;
+         @include respond-below(sm) {
+            align-self: flex-start;
+         }
+         @include respond-below(md) {
+            margin: 0px 0px 0px 0px;
+         }
          .block-list {
             &__content-box {
-               width: 513px;
+               max-width: 513px;
             }
          }
          .lighthohuse {
             margin: -8px 35px 0px 0px;
-         }
-         @include respond-below(md) {
-            margin: 0px 0px 0px 0px;
+            @include respond-below(sm) {
+               margin: 0px 0px 37px 16px;
+            }
          }
       }
    }

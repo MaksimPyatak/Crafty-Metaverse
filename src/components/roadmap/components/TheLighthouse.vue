@@ -6,6 +6,7 @@
       <div></div>
       <div></div>
       <div></div>
+      <div></div>
    </div>
 </template>
 
@@ -14,10 +15,17 @@ defineProps(['classAn'])
 </script>
 
 <style lang="scss" scoped>
+@import '../../../assets/scss/config/breakpoints';
+
 .lighthohuse {
    position: relative;
    width: 134px;
    height: 134px;
+
+   @include respond-below(sm) {
+      width: 93px;
+      height: 93px;
+   }
 
    div {
       position: absolute;
@@ -48,8 +56,13 @@ defineProps(['classAn'])
       }
 
       &:nth-child(5) {
-         transform: scale(0.5);
+         transform: scale(0.6);
          animation-delay: 4s;
+      }
+
+      &:nth-child(6) {
+         transform: scale(0.5);
+         animation-delay: 5s;
       }
 
       &:last-child {
@@ -57,11 +70,27 @@ defineProps(['classAn'])
          height: 70px;
          transform: translate(45%, 45%);
          animation-name: none;
+
+         @include respond-below(sm) {
+            width: 45px;
+            height: 45px;
+            transform: translate(53%, 53%);
+         }
       }
    }
 }
 
 .purple {
+   &::after {
+      content: "";
+      width: 158.18px;
+      height: 166.34px;
+      transform: rotate(-150deg);
+      background: rgba(195, 68, 255, 1);
+      filter: blur(140px);
+      display: block;
+   }
+
    div {
       animation-name: purple;
 
@@ -87,15 +116,32 @@ defineProps(['classAn'])
       background: #ecdae9;
    }
 
-   100% {
+   95% {
       transform: scale(1);
       border-color: rgba(103, 66, 235, 0.421);
       box-shadow: inset 0 0 30px rgba(109, 73, 239, 0.546);
       background: rgba(191, 105, 225, 0);
    }
+
+   100% {
+      transform: scale(1);
+      border-color: rgba(103, 66, 235, 0);
+      box-shadow: inset 0 0 30px rgba(109, 73, 239, 0);
+      background: rgba(191, 105, 225, 0);
+   }
 }
 
 .pink {
+   &::after {
+      content: "";
+      width: 204px;
+      height: 215px;
+      transform: rotate(-150deg);
+      background: rgba(255, 68, 236, 0.4);
+      filter: blur(140px);
+      display: block;
+   }
+
    div {
       animation-name: pink;
 
@@ -121,15 +167,33 @@ defineProps(['classAn'])
       background: #ecdae9;
    }
 
-   100% {
+   95% {
       transform: scale(1);
       border-color: rgba(235, 66, 204, 0.421);
       box-shadow: inset 0 0 30px rgba(239, 73, 197, 0.546);
       background: rgba(225, 105, 207, 0);
    }
+
+   100% {
+      transform: scale(1);
+      border-color: rgba(235, 66, 204, 0);
+      box-shadow: inset 0 0 30px rgba(239, 73, 197, 0);
+      background: rgba(225, 105, 207, 0);
+   }
 }
 
 .green {
+   &::after {
+      content: "";
+      width: 217px;
+      height: 288px;
+      transform: rotate(-150deg);
+      background: rgba(68, 255, 199, 0.4);
+      display: block;
+      filter: blur(90px);
+      border-radius: 50%;
+   }
+
    div {
       animation-name: green;
 
@@ -155,15 +219,36 @@ defineProps(['classAn'])
       background: #daecda;
    }
 
-   100% {
+   95% {
       transform: scale(1);
       border-color: rgb(66 235 94 / 42%);
       box-shadow: inset 0 0 27px rgb(73 239 102 / 25%);
       background: rgb(105 225 114 / 1%);
    }
+
+   100% {
+      transform: scale(1);
+      border-color: rgba(66, 235, 94, 0);
+      box-shadow: inset 0 0 27px rgba(73, 239, 101, 0);
+      background: rgba(105, 225, 115, 0);
+   }
 }
 
 .blue {
+   &::after {
+      content: "";
+      position: relative;
+      bottom: 100%;
+      right: 50%;
+      width: 217px;
+      height: 288px;
+      transform: rotate(-230deg);
+      background: rgba(68, 255, 244, 0.4);
+      display: block;
+      filter: blur(90px);
+      border-radius: 50%;
+   }
+
    div {
       animation-name: blue;
 
@@ -189,10 +274,17 @@ defineProps(['classAn'])
       background: #ecdae9;
    }
 
-   100% {
+   95% {
       transform: scale(1);
       border-color: rgb(119 194 234 / 42%);
       box-shadow: inset 0 0 30px rgb(134 205 245 / 55%);
+      background: rgba(191, 105, 225, 0);
+   }
+
+   100% {
+      transform: scale(1);
+      border-color: rgba(119, 194, 234, 0);
+      box-shadow: inset 0 0 30px rgba(134, 204, 245, 0);
       background: rgba(191, 105, 225, 0);
    }
 }

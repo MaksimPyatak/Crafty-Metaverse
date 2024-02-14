@@ -1,0 +1,27 @@
+@import '../../assets/scss/config/breakpoints';
+
+.our-brend {
+   padding: 112px 0px 129px 0px;
+   background-color: rgb(34 6 75 / 40%);
+   background-image: url(../../assets/img/our-brands/lines.svg);
+
+   @include respond-below(sm) {
+      padding: 60px 0px 60px 0px;
+   }
+
+   &__container {
+   }
+
+   &__cards-block {
+      max-width: 1453px;
+      width: 100%;
+      margin: 90px auto 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 45px;
+      @include respond-below(sm) {
+         margin: 72px 0px 0px 0px;
+      }
+   }
+}

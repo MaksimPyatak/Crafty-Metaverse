@@ -1,0 +1,154 @@
+@import '../../../../assets/scss/config/breakpoints';
+
+.brend-card {
+   max-width: 385px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   &__img-block {
+      position: relative;
+      width: 100%;
+      max-height: 405px;
+      height: 100%;
+      margin: 0px 0px 63px 0px;
+      aspect-ratio: 0.8226;
+      @include respond-below(sm) {
+         margin: 0px 0px 55px 0px;
+      }
+   }
+
+   &__img-block-blur {
+      position: absolute;
+      left: 102px;
+      width: 188px;
+      height: 336px;
+      filter: blur(130px);
+      z-index: 0;
+
+      &_color_turquoise {
+         bottom: -170px;
+         background: rgba(56, 219, 255, 1);
+      }
+
+      &_color_purple {
+         bottom: 0;
+         background: rgba(123, 113, 238, 1);
+         @include respond-below(sm) {
+            bottom: -170px;
+         }
+      }
+
+      &_color_pink {
+         background: rgba(240, 10, 254, 1);
+         @include respond-below(sm) {
+            bottom: -170px;
+         }
+      }
+   }
+
+   &__bg-img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      object-fit: contain;
+      z-index: 1;
+   }
+
+   &__content-block {
+      position: relative;
+      width: 100%;
+      padding: 52px 0px 0px 0px;
+      @include respond-below(sm) {
+         padding: 40px 0px 0px 0px;
+      }
+
+      &::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 6px;
+         border-radius: 3px;
+         z-index: -1;
+      }
+      &::after {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 202px;
+         transform: rotate(180deg);
+         z-index: -1;
+      }
+
+      &_color_turquoise {
+         &::before {
+            background: rgba(6, 214, 223, 1);
+            box-shadow: 0px 0px 4px 0px rgba(56, 219, 255, 0.5);
+         }
+         &::after {
+            background: linear-gradient(
+               359.28deg,
+               rgba(56, 219, 255, 0.14) 0.58%,
+               rgba(56, 219, 255, 0) 42.57%
+            );
+         }
+      }
+
+      &_color_purple {
+         &::before {
+            background: rgba(123, 113, 238, 1);
+            box-shadow: 0px 0px 4px 0px rgba(56, 219, 255, 0.5);
+         }
+         &::after {
+            background: linear-gradient(
+               359.28deg,
+               rgba(56, 219, 255, 0.14) 0.58%,
+               rgba(56, 219, 255, 0) 42.57%
+            );
+         }
+      }
+
+      &_color_pink {
+         &::before {
+            background: rgba(240, 10, 254, 1);
+            box-shadow: 0px 0px 4px 0px rgba(56, 219, 255, 0.5);
+         }
+         &::after {
+            background: linear-gradient(
+               359.28deg,
+               rgba(56, 219, 255, 0.14) 0.58%,
+               rgba(56, 219, 255, 0) 42.57%
+            );
+         }
+      }
+   }
+
+   &__title {
+      max-width: 308px;
+      margin: 0px auto 7px auto;
+      min-height: 44px;
+      font-family: HeliosExtC;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 137.5%;
+      letter-spacing: 0em;
+      text-align: center;
+      text-transform: uppercase;
+      @include respond-below(sm) {
+         margin: 0px auto 14px auto;
+      }
+   }
+
+   &__text {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 161%;
+      letter-spacing: 0.01em;
+      text-align: center;
+   }
+}

@@ -12,7 +12,7 @@
                 class="block-list__list-item">
                <div>
                   <ListItemMarker class="block-list__list-item-marker" />
-                  <div class="block-list__list-item">{{ item.li }}</div>
+                  <div class="block-list__list-item-content">{{ item.li }}</div>
                </div>
 
                <ul v-if="item.nestedList" class="block-list__nested-list">

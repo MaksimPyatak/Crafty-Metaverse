@@ -3,6 +3,8 @@
 
       <div class="roadmap__bg">
          <StarTrack class="roadmap__bg-img" />
+         <div class="roadmap__left-blur"></div>
+         <div class="roadmap__right-blur"></div>
       </div>
 
       <div class="roadmap__container">
